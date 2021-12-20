@@ -82,7 +82,7 @@ all predecessor of a single node in queue this would be *O(|E|)*.
 
 Therefore the total complexity would result in **_O(|V| + |E|)_**
 
-### Important Notes during the execution:
+## Important Notes during the execution:
 
 The program will export a **_export.dot_** and **_export.png_** file representing the graph you choose to
 use as argument.
