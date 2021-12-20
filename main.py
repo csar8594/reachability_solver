@@ -18,7 +18,7 @@ def inputHandler():
 
 def fileReader(filename):
     """
-    Opens the filename passed as a parameter in .txt format and creates a new Graph instance.
+    Opens the file with the filename passed as a parameter in .txt format and creates a new Graph instance.
     Nodes and edges are added as successor and predecessor to build a full graph.
     :param filename: name of the graph .txt file passed as argument
     :return: the graph
@@ -156,6 +156,7 @@ def reachabilitySolver(g, targetSet, playerGreen, playerRed, nodeOut, queue, vis
 
     return (winRegion, winStrat)
 
+
 def solutionPrinter(sol):
     """
     Prints the winning region and winning strategy in a readable format
@@ -167,6 +168,7 @@ def solutionPrinter(sol):
     print("Winning strategy of player 0: ")
     for key, value in winStrat.items():
         print(" " + str(key) + " -> " + str(value))
+
 
 def main():
     """
@@ -196,6 +198,7 @@ def main():
 
     solution = reachabilitySolver(G, Z, green, red, numOut, q, visited, winRegion, winStrat)
     solutionPrinter(solution)
+
 
 if __name__ == '__main__':
     main()
