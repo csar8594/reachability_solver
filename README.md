@@ -7,7 +7,7 @@ In this project the goal is to implement a reachability game solver that obeys t
 - Python
 
 ## Prerequisites:
-- **Linux** system _(standalone application build for Linux only_
+- **Linux** system _(standalone application build for Linux only)_
   
 ## Structure of the graph text-file:
 For the input graph you can create your own by following these instructions:
@@ -19,8 +19,8 @@ For the input graph you can create your own by following these instructions:
 
       ├── nodeID        = any unique integer number representing the node
       ├── nodeTyoe      = 0 if the node is green/diamond and 1 if the node is red/square
-      └── successor(s)  = list of successor nodes for the given nodeID, list must not contain any space and must get
-                          separated with commas
+      └── successor(s)  = list of successor nodes for the given nodeID, list must not contain
+                          any space and must get separated with commas
   
 - example:
     > 0 0 1,2 <br />
@@ -73,14 +73,14 @@ while queue:
 ```
 
 #### Explanation:
-The **queue** variable iteratively stores all the nodes inside the graph an for every node
+The **queue** variable iteratively stores all the nodes inside the graph and for every node
 the algorithm checks for its predecessors and adds these to the winning region iff this
 predecessor node is a green/diamond vertex.
 
-In my opinion **while queue:** reporesents the complexity *O(|V|)* and since we check for
+In my opinion **while queue:** represents the complexity *O(|V|)* and since we check for
 all predecessor of a single node in queue this would be *O(|E|)*.
 
-Therefore the total complexity would result in **_O(|V| + |E|)_**
+Therefore, the total complexity would result in **_O(|V| + |E|)_**
 
 ## Important Notes during the execution:
 
