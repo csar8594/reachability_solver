@@ -33,7 +33,7 @@ For the input graph you can create your own by following these instructions:
 - for the first argument you have to enter a list of target nodes Z (e.g. 1,2)
   > **_NOTE_**: use comma as delimiter and avoid space between the nodes
 - for the second argument you have to enter the path of the textfile containing the graph structure
-  > (**_NOTE_**: no path is needed if the file is in the same folder as the program itself)
+  > **_NOTE_**: no path is needed if the file is in the same folder as the program itself
 - Example:
   > ./PENZ_project_II 1,2 G.txt
   
@@ -77,12 +77,11 @@ The **queue** variable iteratively stores all the nodes inside the graph and for
 the algorithm checks for its predecessors and adds these to the winning region iff this
 predecessor node is a green/diamond vertex.
 
-In my opinion **while queue:** represents the complexity *O(|V|)* and since we check for
+In my opinion **while queue** represents the complexity *O(|V|)* and since we check for
 all predecessor of a single node in queue this would be *O(|E|)*.
 
 Therefore, the total complexity would result in **_O(|V| + |E|)_**
 
 ## Important Notes during the execution:
 
-The program will export a **_export.dot_** and **_export.png_** file representing the graph you choose to
-use as argument.
+The program will export a **_export.dot_** and **_export.png_** file representing the graph you chose to use as argument.
